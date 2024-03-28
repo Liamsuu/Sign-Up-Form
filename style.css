@@ -2,9 +2,19 @@
   padding: 0;
   margin: 0;
 }
+html {
+  font-size: 16px;
+  /* To ensure rem works as expected. */
+}
 
 body {
   display: flex;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+@font-face {
+  font-family: logo-font;
+  src: url(./fonts/Norse-Bold.otf);
 }
 
 :root {
@@ -14,16 +24,28 @@ body {
 .left-block {
   position: relative;
   display: flex;
+  flex-direction: column;
   height: 100vh;
   width: var(--left-width);
-}
-
-#main-image {
-  position: absolute;
-  height: 100vh;
-  width: var(--left-width);
+  background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: var(--left-width) 100vh;
 }
 
 #logo {
-  position: absolute;
+  height: 80%;
+}
+
+#logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+  background-color: black;
+  background: rgba(17, 15, 15, 0.39);
+}
+
+h1 {
+  font-family: logo-font, sans-serif;
+  color: aliceblue;
+  font-size: 5rem;
 }
