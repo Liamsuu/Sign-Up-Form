@@ -1,2 +1,6 @@
 # Sign-Up-Form
-A simple sign up form website.
+A Sign Up Form Website that will help me pracice:
+
+- Form
+- Form Validaation
+- Form UX Design
