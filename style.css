@@ -2,3 +2,28 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  display: flex;
+}
+
+:root {
+  --left-width: 25vw;
+}
+
+.left-block {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: var(--left-width);
+}
+
+#main-image {
+  position: absolute;
+  height: 100vh;
+  width: var(--left-width);
+}
+
+#logo {
+  position: absolute;
+}
