@@ -19,6 +19,7 @@ body {
 
 :root {
   --left-width: 25vw;
+  --left-block-text-clr: aliceblue;
 }
 
 .left-block {
@@ -29,6 +30,14 @@ body {
   width: var(--left-width);
   background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
   background-size: var(--left-width) 100vh;
+  align-items: center;
+}
+
+#background-opacity {
+  position: absolute;
+  height: 100vh;
+  width: var(--left-width);
+  background: rgba(26, 25, 25, 0.349);
 }
 
 #logo {
@@ -37,15 +46,29 @@ body {
 
 #logo-box {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   height: 15%;
+  width: 100%;
   background-color: black;
-  background: rgba(17, 15, 15, 0.39);
+  background: rgba(17, 15, 15, 0.548);
+  margin-top: 40%;
 }
 
 h1 {
   font-family: logo-font, sans-serif;
-  color: aliceblue;
+  color: var(--left-block-text-clr);
   font-size: 5rem;
+}
+
+#img-credit {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 4%;
+}
+
+#img-credit,
+#img-credit a {
+  color: var(--left-block-text-clr);
 }
