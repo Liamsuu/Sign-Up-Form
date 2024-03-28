@@ -20,6 +20,7 @@ body {
 :root {
   --left-width: 25vw;
   --left-block-text-clr: aliceblue;
+  --right-box-width: 75vw;
 }
 
 .left-block {
@@ -71,4 +72,56 @@ h1 {
 #img-credit,
 #img-credit a {
   color: var(--left-block-text-clr);
+}
+
+#main-box {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  width: var(--right-box-width);
+}
+
+#top-box,
+#bottom-box {
+  display: flex;
+  width: var(--left-block-text-clr);
+  height: 35vh;
+}
+
+#form-box {
+  display: flex;
+  background-color: green;
+  height: 30vh;
+  flex-direction: column;
+  width: var(--right-box-width);
+}
+
+#top-box {
+  background-color: red;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#main-text,
+#extra-text {
+  margin-left: 3%;
+  font-size: 2rem;
+}
+
+#main-text {
+  margin-bottom: 2%;
+}
+
+#extra-text {
+}
+
+#bottom-box {
+  background-color: aqua;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-left: 3%;
+  margin-top: 1%;
 }
