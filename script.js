@@ -10,6 +10,7 @@ form.addEventListener("submit", (event) => {
   if (pass.value !== confPass.value) {
     pass.setAttribute("isValid", false);
     confPass.setAttribute("isValid", false);
+
     event.preventDefault();
     pass.parentNode.insertBefore(validationText, pass.nextSibling);
   }

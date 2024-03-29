@@ -191,7 +191,8 @@ label {
   margin-bottom: 0.5%;
 }
 
-input[type="password"]:invalid {
+input[type="password"]:invalid,
+input[isValid="false"] {
   border-color: red;
 }
 
