@@ -40,29 +40,41 @@
           <form action="#" method="get">
             <div id="form-container">
               <div id="form-first">
-                <label for="">FIRST NAME</label>
-                <input type="text" />
-                <label for="">EMAIL</label>
-                <input type="email" />
-                <label for="">PASSWORD</label>
-                <input type="password" />
+                <label for="name">FIRST NAME</label>
+                <input type="text" name="name" id="name" required/>
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" required/>
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" required/>
               </div>
               <div id="form-second">
-                <label for="">LAST NAME</label>
-                <input type="text" />
+                <label for="surname">LAST NAME</label>
+                <input type="text" name="surname" id="surname" required/>
 
-                <label for="">PHONE NUMBER</label>
-                <input type="text" />
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" name="phone" id="phone" required/>
 
-                <label for="">CONFIRM PASSWORD</label>
-                <input type="password" />
+                <label for="conf-password">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  name="conf-password"
+                  id="conf-password"
+                  required
+                />
               </div>
             </div>
-          </form>
+          
         </div>
         <div id="bottom-box">
-          <button type="submit">Create Account</button>
-          <p>Already have an account? Log in</p>
+          <div id="button-container">
+            <button type="submit">Create Account</button>
+          </div>
+        </form>
+          <div>
+            <p id="account-text">
+              Already have an account? <a href="#">Log in</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>

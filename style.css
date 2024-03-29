@@ -87,18 +87,18 @@ h1 {
   display: flex;
   width: var(--left-block-text-clr);
   height: 35vh;
+  background-color: #f0f0f0;
 }
 
 #form-box {
   display: flex;
-  background-color: green;
+  background-color: #ffffff;
   height: 30vh;
   flex-direction: column;
   width: var(--right-box-width);
 }
 
 #top-box {
-  background-color: red;
   flex-direction: column;
   justify-content: center;
 }
@@ -107,24 +107,24 @@ h1 {
 #extra-text {
   margin-left: 3%;
   font-size: 2rem;
+  font-weight: 400;
 }
 
 #main-text {
   margin-bottom: 2%;
 }
 
-#extra-text {
-}
-
 #bottom-box {
-  background-color: aqua;
+  display: flex;
+  flex-direction: column;
 }
 
 h3 {
   font-size: 1.5rem;
   margin-left: 3%;
   margin-top: 1%;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
+  font-weight: 400;
 }
 
 #form-container,
@@ -143,7 +143,41 @@ h3 {
 }
 
 #form-first {
+  width: 30%;
+  margin-right: 10%;
 }
 
 #form-second {
+  width: 30%;
+}
+
+button {
+  background-color: #596d48;
+  color: aliceblue;
+  font-weight: bolder;
+  font-size: 2rem;
+  padding: 1% 3%;
+  border-radius: 10px;
+}
+
+#account-text a {
+  color: #596d48;
+  text-decoration: none;
+}
+
+input {
+  border: 2px solid #e5e7eb;
+  height: 2rem;
+  border-radius: 4px;
+  margin-bottom: 5%;
+}
+
+form {
+  height: 100%;
+}
+
+label {
+  font-size: 0.8rem;
+  color: #474646;
+  margin-bottom: 0.5%;
 }
