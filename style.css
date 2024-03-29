@@ -175,10 +175,14 @@ button {
 }
 
 input {
-  border: 2px solid #e5e7eb;
+  border: 1px solid #e5e7eb;
   height: 2rem;
   border-radius: 4px;
   margin-bottom: 5%;
+}
+
+#password {
+  margin-bottom: 0;
 }
 
 label {
@@ -195,4 +199,9 @@ input:focus {
   outline: none;
   border-color: blue;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.103);
+}
+
+.pass-error {
+  color: red;
+  font-size: 0.7rem;
 }
